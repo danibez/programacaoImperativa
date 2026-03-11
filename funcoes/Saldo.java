@@ -6,9 +6,13 @@ public class Saldo {
         return salario + (salario / 100);
     }
 
+    public static void imprime(double salario){
+        System.out.println("O novo salario é " + salario);
+    }
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         double r = reajuste(s.nextDouble());
-        System.out.println("O novo salario é " + r);
+        imprime(r);
     }
 }
